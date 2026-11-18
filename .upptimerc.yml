@@ -1,31 +1,75 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: HardstylesDev
+repo: tbwebs-status
 
+# Elke 5 minuten gecontroleerd (GitHub Actions). De health-check werkt ook bij testversies achter een wachtwoord.
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: TBWebs
+    url: https://www.tbwebs.nl/api/tbwebs/core/health
+    slug: tbwebs
+  - name: Graafstal Green Projects
+    url: https://graafstal.tbwebs.nl/api/tbwebs/core/health
+    slug: graafstal
+  - name: Nagelstudio
+    url: https://nagelstudio.tbwebs.nl/api/tbwebs/core/health
+    slug: nagelstudio
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.tbwebs.nl
+  logoUrl: https://www.tbwebs.nl/favicon.svg
+  name: TBWebs status
+  introTitle: "Status van de websites van **TBWebs**"
+  introMessage: Hier zie je of onze websites en die van onze klanten bereikbaar zijn. Elke vijf minuten gecontroleerd.
+  theme: light
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: tbwebs.nl
+      href: https://www.tbwebs.nl
+  i18n:
+    activeIncidents: Actieve storingen
+    allSystemsOperational: Alles werkt
+    incidentReport: "Storing #$NUMBER"
+    activeIncidentSummary: Gemeld op $DATE, $POSTS berichten
+    incidentTitle: $SUBTITLE
+    incidentDetails: Details
+    incidentFixed: Opgelost
+    incidentOngoing: Bezig
+    incidentOpenedAt: Gemeld op
+    incidentClosedAt: Opgelost op
+    incidentSubscribe: Volg updates
+    incidentViewOnGitHub: Bekijk op GitHub
+    incidentCommentSummary: Geplaatst op $DATE door $AUTHOR
+    incidentBack: Terug naar alle storingen
+    pastIncidents: Eerdere storingen
+    pastIncidentsResolved: Opgelost in $MINUTES minuten met $POSTS berichten
+    liveStatus: Live status
+    systemStatus: Status
+    online: Online
+    offline: Offline
+    degraded: Traag
+    down: Onbereikbaar
+    status: Status
+    loading: Laden...
+    navGitHub: GitHub
+    footer: Bijgehouden met Upptime
+    rateLimitExceeded: Even te veel verzoeken aan GitHub, probeer het zo opnieuw.
+    error: Er ging iets mis.
+    responseTime: Reactietijd
+    responseTimeDay: Reactietijd (24 uur)
+    responseTimeWeek: Reactietijd (7 dagen)
+    responseTimeMonth: Reactietijd (30 dagen)
+    responseTimeYear: Reactietijd (1 jaar)
+    overall: Totaal
+    uptime: Beschikbaar
+    uptimeDay: Beschikbaar (24 uur)
+    uptimeWeek: Beschikbaar (7 dagen)
+    uptimeMonth: Beschikbaar (30 dagen)
+    uptimeYear: Beschikbaar (1 jaar)
+    averageResponseTime: Gemiddelde reactietijd
+    ms: ms
+    duration: Duur
+    sevenDaysAgo: 7 dagen geleden
+    today: Vandaag
+    noIncidents: Geen storingen
+    noIncidentsDay: Geen storingen op deze dag
+    noIncidentsWeek: Geen storingen deze week
